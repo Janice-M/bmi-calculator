@@ -4,10 +4,14 @@
     <meta charset="utf-8">
     <title></title>
     <script>
-    var subtract = function(number1, number2) {
-return number1 - number2;
+    var bmi = function(number1, number2) {
+return number1/(number2* number2);
 };
-alert(subtract(10,5));
+var number1 = parseInt(prompt("Enter your weight in kgs:"));
+var number2 = parseFloat(prompt("Enter your height in meters:"));
+
+var result = bmi(number1, number2)
+alert(result);
 </script>
   </head>
   <body>
